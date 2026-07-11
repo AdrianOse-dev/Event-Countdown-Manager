@@ -1,4 +1,4 @@
-let countDownDate = new Date("December 16, 2025 09:00:00").getTime();
+let countDownDate = new Date("April 16, 2027 09:00:00").getTime();
 
 // Variable to store the interval ID
 let timerInterval;
@@ -14,7 +14,7 @@ function startTimer() {
 
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
     let hours = Math.floor(
-      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
     );
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((distance % (1000 * 60)) / 1000);
