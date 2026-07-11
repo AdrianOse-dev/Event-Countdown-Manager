@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="A2.css" />
+  </head>
+
+  <body>
+    <div id="background"></div>
+    <h1 id="title">Event Manager</h1>
+
+    <h1 id="eventTitle">CMPT 281 Final Exam</h1>
+
+    <div class="image-container">
+      <img
+        src="istockphoto-1148253056-1024x1024.jpg"
+        alt="Event Icon"
+        id="eventImage"
+        width="100"
+      />
+    </div>
+
+    <!-- Timer Container -->
+    <div id="timer-container">
+      <div class="time-unit">
+        <span id="days">00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="time-unit">
+        <span id="hours">00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="time-unit">
+        <span id="minutes">00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="time-unit">
+        <span id="seconds">00</span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+
+    <a id="toggleForm" class="toggle-button">Add Event</a>
+
+    <!-- Collapsible Form -->
+    <div id="eventForm" class="collapse">
+      <h2>Add Event</h2>
+
+      <form id="countdownForm">
+        <label for="name">Event</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" />
+
+        <div class="button">
+          <div id="buttonrow">
+            <button type="submit">Add Event</button>
+
+            <button
+              id="deleteButton"
+              type="button"
+              onclick="window.location.href='A2.html'"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="A2.js"></script>
+</html>

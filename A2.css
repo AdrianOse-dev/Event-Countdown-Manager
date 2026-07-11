@@ -1,0 +1,157 @@
+#timer-container {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  margin: 20px 0;
+  color: white; 
+  font-family: sans-serif;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.time-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.time-unit span:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.image-container {
+  position: absolute;
+  right: 20px;
+  top: 180px;
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  } /* Grows slightly */
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h1#title {
+  color: #0d031b;
+}
+
+/*toggle button */
+.toggle-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+#eventForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 350px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.collapse {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#background {
+  background-image: url("istockphoto-804368076-1024x1024.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 99%;
+  height: 99%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  display: flex;
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80px;
+  text-align: center;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#buttonrow {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+#bottomrow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+#deleteButton {
+  background-color: #dc3545;
+}
